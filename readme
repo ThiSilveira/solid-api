@@ -1,0 +1,20 @@
+Design Patterns 
+    Package by Feature - Estrutura do projeto baseada em features (funcionalidade)
+    SOLID - Conjunto de 5 principios
+        Single Responsability Principle (Principio de responsabilidade única) - Cada módulo ou classe deve ter responsabilidade sobre uma única funcionalidade.
+        Open Closed Principle (Principio aberto/fechado) - As entidades do software devem ser abertas para extensão, mas fechadas para modificação.
+        Liskov Substitution Principle (Principio Substituição de Liskov) - Tem um relacionamento próximo com a metodologia do projeto por contrato e coloca restrições na forma como os contratos interagem com o conceito de herança.
+        Interface Segregation Principle (Principio Segregação de Interface) - Afirma que nenhum cliente deve ser forçados a depender de métodos que não utiliza.
+        Dependency Inversion Principle (Principio de Inversão de Dependencia) - Refere-se a uma forma específica de dissociação de software de módulos.
+
+- Desconectado a camada de infra da cadamada de dominio/funcional (API o que se conecta com o mundo externo)
+- Cada classe tem sua responsabilidade, exemplo o CreateUserUseCase, onde sua responsabilidade é criar o usuário e o CreateUserController onde a unica função é a comunicação do mundo externo através do protocolo HTTP
+
+yarn init -y
+yarn add express
+yarn add typescript ts-node-dev -D
+yarn tsc --init 
+yarn add @types/express -D
+yarn add uuidv4  --Gera id único universal
+yarn add nodemailer
+yarn add @types/nodemailer
